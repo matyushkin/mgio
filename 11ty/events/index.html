@@ -1,0 +1,36 @@
+---
+title: Бесплатные IT-мероприятия
+keywords: вебинары, лекции, митапы, онлайн, программирование, информационные технологии
+description: Агрегатор IT-мероприятий. Вебинары, конференции, лекции, митапы и хакатоны.
+---
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+	{% include head_meta.njk %}
+	<meta name="keywords" content="{{ keywords }}">
+	<meta name="description" content="{{ description }}">
+	{% include head_links.njk %}
+	{% include head_links.njk %}
+	{% include metrika.njk %}
+	<link rel="stylesheet" type="text/css" href="css/events_filter.css">
+	<title>{{ title }}</title>
+</head>
+<body>
+	<header>
+		{% include header.njk %}
+	</header>
+	<main>
+		<article>
+			<h1>Поиск IT-мероприятий</h1>
+			{% include events_filter.njk %}
+			{% include events.njk %}	
+		</article>
+	</main>
+	<footer>
+		{% include footer.njk %}
+	</footer>
+	<script src="src/events_filter.js" ></script>
+</body>
+</html>
+​

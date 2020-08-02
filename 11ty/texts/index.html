@@ -1,0 +1,27 @@
+---
+title: Тексты
+---
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	{% include head_meta.njk %}
+	{% include head_links.njk %}
+	{% include metrika.njk %}
+	<title>{{ title }}</title>
+</head>
+<body>
+	<header>
+		{% include header.njk %}
+	</header>
+	<main>
+		<h1>{{ title }}</h1>
+		<p><a href ="{{links.2018_pdf}}">Книга стихов «а/я», 2018 г.</a></p>
+		<p><a href ="{{links.2015_pdf}}">Книга стихов «О пространстве и времени», 2015 г.</a></p>
+		<p><a href ="{{links.2012_pdf}}">Об исследовании первых воспоминаний, редакция 2012 г.</a></p>
+		<p><a href ="{{links.2010_pdf}}">О выставке 2010 г.</a></p>
+	</main>
+	<footer>
+		{% include footer.njk %}
+	</footer>
+</body>
+</html>

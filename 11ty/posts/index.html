@@ -1,0 +1,53 @@
+---
+title: Перечень публикаций о программировании
+description: Публикации Лёвы Матюшкина о Python, глубоком обучении, нейросетях и прочих интересных вещах
+keywords: Python, нейросети, глубокое обучение, статьи, видео
+---
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {% include head_meta.njk %}
+  {% include head_links.njk %}
+  {% include metrika.njk %}
+  <meta content="{{ keywords }}" name="keywords"/>
+  <meta content="{{ description }}" name="description"/>
+  <title>{{ title }}</title>
+ </head>
+ <body class='light-theme'>
+  <header>
+   {% include header.njk %}
+   <form>
+    <button type="button" class="theme-button">Изменить тему</button>
+  </form>
+  </header>
+  <main>
+   <h1>
+    {{ title }}
+   </h1>
+   <section>
+    <p>
+     Большинство публикаций подготовлены для
+     <a href="https://proglib.io/">
+      Библиотеки программиста
+     </a>
+     (в этом случае названия нередко скорректированы редактором), более ранние — для
+     <a href="https://habr.com/ru/users/LeoMat/">
+      Хабра</a>. Публикации представляют собой как оригинальные статьи и пособия, так и переводы англоязычных статей.
+    </p>
+    <p>
+     Ниже представлены публикации на темы, связанные так или иначе с программированием. Также я занимаюсь научными исследованиями (<a href="https://www.researchgate.net/profile/Lev_Matyushkin">профиль на ResearchGate</a>) и учебной деятельностью (<a href="https://stepik.org/course/52514/syllabus">курс Наноматериалы на stepik.org</a>). Основной научный проект сейчас — <a href="https://github.com/matyushkin/reminiscence">исследование первых воспоминаний</a>.</p>
+    <p lang="ru">
+     Внутри рубрик статьи расположены в порядке от наиболее новых к более старым. Жирным выделены наиболее проработанные публикации.
+    </p>
+   </section>
+   {% include postcards.njk %}
+    <p lang="ru">Данный файл создан программно. Количество просмотров определено с помощью парсинга сайтов, где публиковались статьи.</p>
+  </main>
+  <footer>
+    {% include footer.njk %}
+  </footer>
+  <script src="source/change_theme.js" type="text/javascript">
+  </script>
+ </body>
+</html>
